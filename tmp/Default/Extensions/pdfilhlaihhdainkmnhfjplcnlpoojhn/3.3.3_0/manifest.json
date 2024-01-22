@@ -1,0 +1,37 @@
+{
+   "action": {
+      "default_icon": "img/logo-48.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "css": [ "assets/log.d78ed412.css" ],
+      "js": [ "assets/content-script-loader.chunk-b1089d4f.4657942d.js", "assets/content-script-loader.chunk-c06fd1ce.61de30ae.js" ],
+      "matches": [ "*://www.etsy.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Streamline your search for potential products on Etsy with the HeyEtsy.com Web Extension. Made By YTuong.me",
+   "icons": {
+      "128": "img/logo-128.png",
+      "256": "img/logo-256.png",
+      "48": "img/logo-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlWFbAgJ4LK/M+tWUslKcEf3dKgmMC1uHCGHM5ulhC7zGY4VrRmcy/NXLBZB3t3Gurhq+QYWi4EPpNw9XHl6iMlbCe4mdFbG69Qeym+lJ+pyRXSCt9p+tIZEdwvnwDxyAqWTZdUvlIVdjbYarrS8WHadhnFdSEzP5eBGWmfuumNzQcnWhR8ePj0CM4dPCU8aHLbnJ4b1py2fH/oAR/f1LOf/I/v4NjbOwLd/+XReac3Zt0raDJCbBO7RDvAfHn8jopf7OBMfmmxI7jUJjwEXLhg9GRioXaQs/qUydVgcQSpEJrz8hhJ+IZkFVdMie21/m5hJLRgGzQWo08LbwJ6LcpQIDAQAB",
+   "manifest_version": 3,
+   "name": "Super Spy HeyEtsy.com Web Extension",
+   "permissions": [ "storage", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.3.3",
+   "web_accessible_resources": [ {
+      "matches": [ "*://www.etsy.com/*" ],
+      "resources": [ "*" ],
+      "use_dynamic_url": false
+   }, {
+      "matches": [ "*://www.etsy.com/*" ],
+      "resources": [ "assets/chunk-81526606.js", "assets/chunk-2df99117.js", "assets/chunk-336a5005.js", "assets/chunk-49b9528c.js", "assets/chunk-b1089d4f.js", "assets/chunk-d9fcad0c.js", "assets/chunk-c06fd1ce.js" ],
+      "use_dynamic_url": true
+   } ]
+}
